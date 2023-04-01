@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+*{
+    background-image: linear-gradient(to right, #e7decd, #804e49);
+}
+
+body{
+    
+    font: italic normal 1em Arial
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    text-indent: 25px;
+}

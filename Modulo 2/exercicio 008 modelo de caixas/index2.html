@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        header > h1{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        body{
+            font-family: sans-serif;
+            background-color: rgb(35, 95, 0);
+            margin: 0;
+        }
+        header{
+            background-color: rgb(255, 241, 115);
+            padding: 1px;
+            margin: 1px;
+        }
+
+        main{
+            background-color: rgb(255, 241, 115);
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.514);
+            border-radius: 10px;
+        }
+        nav{
+            background-color: rgba(20, 82, 1, 0.89);
+            margin-bottom: 5px;
+            width: 210px;
+            padding: 5px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.493);
+        
+        }
+        nav > a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+            margin-right: 20px;
+            
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+       
+
+        article{
+            background-color: rgb(255, 255, 255);
+            padding: 5px;
+            border-radius: 2px;
+        }
+
+        article > aside{
+            background-color: rgb(253, 241, 115);
+            width: 250px;
+            
+
+        } 
+        section{
+            color: black;
+        
+        }
+
+        footer{
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Brasil</h1>
+        <nav>
+            <a href="index2.html">Link 1</a>
+            <a href="index.html">Link 2</a>   
+            <a href="index.html">Link 3</a> 
+        </nav>
+   </header>
+   <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, fuga repellendus. Corporis, blanditiis mollitia. Fuga, ipsam. Dolor praesentium, corrupti reprehenderit, animi architecto voluptatum quidem atque eius aperiam soluta, consequatur corporis.</p>
+                <aside>
+                    <p>Artigo escrito por Jose da Silva</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Noticia sobre economia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione eius quas minus, sint adipisci ex dolorum inventore id molestias quod voluptates voluptate cumque. Consequuntur, consequatur maxime dolore officia itaque possimus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae dolorum voluptatum in, aperiam voluptatem, facere sapiente officia quod quam, quis quaerat rem ipsa nobis? Perferendis, numquam vitae? Corrupti, libero consectetur.</p>
+                <aside>
+                    <p>Artigo escrito por Frei Damiao</p>
+                </aside>
+            </article>
+        </section>
+   </main>
+    <footer>
+        <p>Desenvolvido por Alan Barros</p>
+    </footer>
+
+</body>
+</html>

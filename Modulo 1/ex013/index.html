@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Midias em HTML 5</title>
+</head>
+<body>
+    <h1>Midia Dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente o tamanho do seu navergador.</p>
+
+  <picture>
+    <source media="(max-width: 740px)" srcset="imagens/fotos-p.png" type="image/png">
+    <source media="(max-width: 1040px)" srcset="imagens/fotos-m.png" type="image/png">
+    
+    <img src="imagens/fotos-g.png" alt="imagen flexivel">
+
+  </picture>
+
+  <h1>Reproduzindo Audio</h1>
+  <p>Vamos aprender a reproduir audios no HTML 5.</p>
+  <audio src="midia/guanacast-33.mp3" controls autoplay></audio>
+  <!-- MP3 WAV OGG -->
+
+  <audio preload="metadata" autoplay controls>
+    <source src="midia/Ice & Fire - King Canyon.mp3" type="audio/mpeg">
+    <source src="midia/Ice & Fire - King Canyon.ogg" type="audio/ogg">
+    <source src="midia/Ice & Fire - King Canyon.wave" type="audio/wave">
+    <p>Infelizmente seu navegador nao suporta reproduir audio. <a href="midia/Ice & Fire - King Canyon.mp3" type="audio/mp3"> clique aqui para baixar o arquivo em MP3</a></p>
+  </audio>
+</body>
+</html>
