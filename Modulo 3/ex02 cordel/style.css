@@ -1,6 +1,55 @@
 @charset "UTF-8";
+@font-face {
+    font-family: changa-one-italic;
+    src: url('fontes/Changa_One/ChangaOne-Italic.ttf');
+}
+@font-face {
+    font-family: changa-one-regular;
+    src: url('fontes/Changa_One/ChangaOne-Regular.ttf');
+}
 
 :root{
     --fonte-padrao: 'Arial', 'sans serif';
+    --fonte-italic: 'changa-one-italic';
+    --fonte-regular: 'changa-one-regular'; 
+}
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+p{
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: 100;
+    font-family: var(--fonte-italic);
+    line-height: 1.8em;
+
+}
+header{
+    min-height: 200px;
+    background-color: black;
+    font-family: var(--fonte-regular);
+    color: white;
+    text-align: center;
+}
+header h1{
+    padding-top: 50px;
+    font-size: 3em;
+}
+
+header a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#link_autor:hover{
+    text-decoration: underline;
+}
+
+.sec1{
+    border-left: 3px solid black;
+    border-right: 3px solid black ;
 }
