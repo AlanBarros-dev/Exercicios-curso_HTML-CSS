@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização vertical e horizontal de caixas</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            background-position: center center;
+            position: relative;
+            height: 97.5vh;
+            background-color: purple;
+            padding: 10px;
+        }
+
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-position: center center;
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 380px;
+            background-color: bisque;
+            
+            left: 50%;
+            top: 50%;
+            
+            transform: translate(-50%, -50%)
+            
+        }
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+
+
+
+    <!--A ordem de posicionamento é box de fora por padrão tem que ser relative com:
+
+    position: relative
+    
+    e a box de dentro tem que ser absolute com:
+
+    position: absolute;
+    apartir do momento que você usa essa configuração se adequa a box a usar:
+
+    left: tamanho em pixel;
+    da esquerda ate a box
+
+    top: tamanho em pixel
+    de cima ate a box
+    
+    colocando o ponto inicial/referencial da box para o centro usando 
+    transform: translate(-50%, -50%)
+
+    pode se usar valores positivos e por pixel também:
+
+    primeiro valor
+    direita: +
+    equerda: -
+
+    segundo valor
+    cima: -
+    baixo: +
+    --> 
+</body>
+</html>
