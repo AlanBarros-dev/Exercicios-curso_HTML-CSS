@@ -53,3 +53,14 @@ header a{
     border-left: 3px solid black;
     border-right: 3px solid black ;
 }
+
+.sec2{
+    background-image: url(imagens/background001.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+}
+.pagarafo_sec2{
+    color: white;
+    background-color: transparent;
+    padding: 15px;
+}
