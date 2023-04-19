@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>segurança com Iframes</title>
+    <style>
+        iframe{
+            width: 400px;
+            height: 600px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principal</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur vitae quis accusantium illo commodi saepe molestiae, repellendus et officiis a cum vero veritatis placeat alias eaque minima sunt eius eum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, commodi fugit odio obcaecati quasi saepe debitis? Distinctio quas quibusdam molestias asperiores porro iusto assumenda, illo sed ex consequuntur. Nam, quam?</p>
+    <iframe src="paginas _extras/pgex04.html" frameborder="0" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+
+    <!--Deixando iframe seguro
+    sandbox="sandbox" ativa todas as seguranças com aquele iframe
+
+    sandbox="allow-same-origin" para permitir que o conteudo seja executado caso o iframe seja da mesma origem (servidor ou o mesmo documento)
+    
+    sandbox="allow-forms" permite formularios 
+    sandbox="allow-scripts" permite scripts JS
+
+    referrerpolicy="no-referrer" não deixa o site captar as pesquisas restringindo propagandas para o usuario-->
+</body>
+</html>
