@@ -4,6 +4,7 @@
 *{
     border: 0px;
     padding: 0px;
+    margin: 0px;
 }
 html, body{
     background-color: black;
@@ -11,7 +12,45 @@ html, body{
     width: 100vw;
 }
 
+body{
+    background-image: url('imagens/fundo-madeira.jpg');
+    background-repeat:  no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
 #celular{
-    background: url('imagens/frame-iphone.png');
+    background-image: url('imagens/frame-iphone.png');
+    background-repeat: no-repeat;
+    height: 627px;
+    width: 311px;
+
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#icones_linkados{
+    width: 50px;
+    height: 200px;
+    position: absolute;
+    top: 5px;
+    left: 95vw;
+}
+.home{
+    border-radius: 30px;
+    margin-top: 5px;
+    
+}
+.instagram{
+    border-radius: 30px;
+    margin-top: 5px;
+    
+}
+.github{
+    margin-top: 5px;
+    
+    border-radius: 30px;
 }
