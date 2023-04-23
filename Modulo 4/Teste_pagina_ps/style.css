@@ -22,6 +22,7 @@ body{
 #celular{
     background-image: url('imagens/frame-iphone.png');
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 627px;
     width: 311px;
 
@@ -33,18 +34,19 @@ body{
 }
 
 #icones_linkados{
+    background-position: top left;
     width: 50px;
     height: 200px;
     position: absolute;
     top: 5px;
-    left: 95vw;
+   
 }
 .home{
     border-radius: 30px;
     margin-top: 5px;
     
 }
-.instagram{
+.inst{
     border-radius: 30px;
     margin-top: 5px;
     
@@ -53,4 +55,13 @@ body{
     margin-top: 5px;
     
     border-radius: 30px;
+}
+
+iframe#tela{
+    position: relative;
+    top: 79px;
+    left: 22px;
+
+    height: 473px;
+    width: 268px;
 }
