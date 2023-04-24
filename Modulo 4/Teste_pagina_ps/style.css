@@ -57,7 +57,7 @@ body{
     border-radius: 30px;
 }
 
-iframe#tela{
+iframe#tela1{
     position: relative;
     top: 79px;
     left: 22px;
@@ -65,3 +65,4 @@ iframe#tela{
     height: 473px;
     width: 268px;
 }
+
