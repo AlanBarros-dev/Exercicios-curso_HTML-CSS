@@ -9,11 +9,30 @@
         *{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
     </style>
 </head>
+
+<!-- <form> </form> e a tag que abre um formulario
+    action para onde esses dados vão e autocomplete deixa ativado ou não o autocomplete do formulario ex: 1*linha arquivo javascript com nome cadastro.js
+
+    Label for="id" relaciona o input com o nome exemplo formulario de nome: 2*linha 
+
+    definindo o input  tipo text name= nome id="inome" 3*LINHA
+
+1 - <form action="cadastro.js" autocomplete="off">
+ 2 -     <p><label for="inome">Nome:</label> 
+  3 -          <input type="text" name="nome" id="inome"></p>
+</form>
+
+method = get dados não sensiveis como nome, peso, altura, pesquisa
+       = post dados mais sensiveis arquivos. (por ser um pouco mais seguros)
+-->
 <body>
     <h1>Forms</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form action="cadastro.js" method="post" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label>
+             <input type="text" name="sobrenome" id="isobrenome"></p>
+
         <p><input type="submit" value="Enviar"></p>
     </form>
 
