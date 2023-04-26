@@ -34,28 +34,26 @@ body{
 }
 
 #icones_linkados{
-    background-position: top left;
+    text-align: right;
+    
+}
+
+#icones_linkados img{
     width: 50px;
-    height: 200px;
-    position: absolute;
-    top: 5px;
-   
+    height: 50px;
+    border-radius: 50%;
+    margin: 8px;
+    box-sizing: border-box;    
 }
-.home{
-    border-radius: 30px;
-    margin-top: 5px;
-    
+
+#icones_linkados img:hover{
+    border: 3px solid rgba(255, 255, 255, 0.603);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.363);
+    transform: translate(-5px, -5px);
+    transition: transform 0.5s, border 0.3s;
+
 }
-.inst{
-    border-radius: 30px;
-    margin-top: 5px;
-    
-}
-.github{
-    margin-top: 5px;
-    
-    border-radius: 30px;
-}
+
 
 iframe#tela1{
     position: relative;
