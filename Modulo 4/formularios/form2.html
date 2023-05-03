@@ -6,17 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2 aula de formulario</title>
 </head>
+<!--required dentro do input define que o espaco do formulario requer ser preenchido
+    - minlength define o numero de caracteres minimos
+    - maxlength define o numero de caracteres maximo
+    - placeholder coloca dentro da caixa a dica do que ser digitado
+    size tamanho em caracteres da caixa de formulario
+    - autocomplete dentro do input define o tipo de dado que vai entrar e ser autocompletado como current-passsword (senha atual) entre varios outros.
+
+    input type reset limpa todos os campos
+-->
 <body>
     <h1>Teste de formulario 2</h1>
 
-    <form action="cadastro.js" method="post" autocomplete="off">
+    <form action="cadastro.js" method="post" autocomplete="on">
         <p>
             <label for="iusuario">Usuario:</label>
-            <input type="text" name="usuario" id="iusuario">
+            <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="27" placeholder="nome de usuario" size="25" autocomplete="username">
         </p>
         <p>
             <label for="isenha">Senha:</label>
-            <input type="password" name="senha" id="isenha">
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder="senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="limpar">
         </p>
 
     </form>
